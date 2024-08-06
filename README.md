@@ -19,26 +19,18 @@ A starter template for [Tauri](https://tauri.app) + [Solid](https://solidjs.com)
 
 - 👌 [ESLint](https://eslint.org) + [Prettier](https://prettier.io) - ESLint find problems in your code and Prettier format your code for an easy life.
 
-<br>
+
 
 ## Getting started
 
-### GitHub Template
+## Pre-requisites
 
-[Create a repo from this template on GitHub](https://github.com/AR10Dev/tauri-solid-ts-tailwind-vite/generate)
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-```bash
-npx degit AR10Dev/tauri-solid-ts-tailwind-vite my-app # or bunx degit AR10Dev/tauri-solid-ts-tailwind-vite my-app
-cd my-app
-npm install # or pnpm install or yarn install or bun install
-```
-
-### Note
 For use Tauri you need to Setup your environment following this [guide](https://tauri.app/guides/getting-started/prerequisites)
+
+- [Node.js](https://nodejs.org/) (version 18.19.0 or higher)
+- [Bun](https://bunpkg.com/) (optional, but recommended for faster dependency installation)
+- [Rust](https://www.rust-lang.org/learn/get-started#installing-rust) (version 1.55.0 or higher)
+- [C++ compiler](https://code.visualstudio.com/docs/cpp/config-mingw) (for Windows users)
 
 ## Checklist
 
@@ -59,12 +51,11 @@ When you use this template, follow the checklist to update your info properly
 npm run dev:tauri # or pnpm dev:tauri or yarn dev:tauri or bun dev:tauri
 ```
 
-Runs the app in the development mode.<br>
+Runs the app in the development mode. 
 
-The first time you run this command, it will take several minutes for the Rust package manager to download and build all the required packages. Since they are cached, subsequent builds will be much faster, as only your code will need rebuilding.<br>
-
-If you make edits to the page in the webview should update automatically just like a browser will reload.<br>
-When you make edits to the Rust files, they will be rebuilt automatically and your app will restart.<br>
+The first time you run this command, it will take several minutes for the Rust package manager to download and build all the required packages. Since they are cached, subsequent builds will be much faster, as only your code will need rebuilding. \
+If you make edits to the page in the webview should update automatically just like a browser will reload. \
+When you make edits to the Rust files, they will be rebuilt automatically and your app will restart.
 
 ### Build
 
@@ -72,18 +63,19 @@ When you make edits to the Rust files, they will be rebuilt automatically and yo
 npm run build:tauri # or pnpm build:tauri or yarn build:tauri or bun build:tauri
 ```
 
-Builds Solid to the `dist` folder and after will embed it into a single binary with your Rust code.<br>
-The binary itself will be located in `src-tauri/target/release/[app name]`, and installers will be located in `src-tauri/target/release/bundle/`<br>
+Builds Solid to the `dist` folder and after will embed it into a single binary with your Rust code. 
+The binary itself will be located in `src-tauri/target/release/[app name]`, and installers will be located in `src-tauri/target/release/bundle/`
 
-Like the `dev:tauri` command, the first time you run this, it will take some time to collect the Rust crates and build everything - but on subsequent runs it will only need to rebuild your code, which is much quicker.<br>
+Like the `dev:tauri` command, the first time you run this, it will take some time to collect the Rust crates and build everything - but on subsequent runs it will only need to rebuild your code, which is much quicker.
 
-It correctly bundles Solid in production mode and optimizes the binary for the best performance.<br>
+It correctly bundles Solid in production mode and optimizes the binary for the best performance.
 
 🎉 Congratulations, your app is ready to be release!
 
 ## Custom App Icon
-To generate your custom app icon you can follow this [guide](https://tauri.app/guides/features/icons).<br>
-Your new app icons will be located in `src-tauri/icons/` and remeber to update the `icon` field in `src-tauri/tauri.conf.json` with all your new icon path name.<br>
+
+To generate your custom app icon you can follow this [guide](https://tauri.app/guides/features/icons).\
+Your new app icons will be located in `src-tauri/icons/` and remeber to update the `icon` field in `src-tauri/tauri.conf.json` with all your new icon path name.
 
 ## Customize the tauri.conf.json
 
