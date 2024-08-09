@@ -28,7 +28,7 @@ A starter template for [Tauri](https://tauri.app) + [Solid](https://solidjs.com)
 For use Tauri you need to Setup your environment following this [guide](https://tauri.app/guides/getting-started/prerequisites)
 
 - [Node.js](https://nodejs.org/) (version 18.19.0 or higher)
-- [Bun](https://bunpkg.com/) (optional, but recommended for faster dependency installation)
+- [Bun](bun.sh) (optional, but recommended for faster dependency installation)
 - [Rust](https://www.rust-lang.org/learn/get-started#installing-rust) (version 1.55.0 or higher)
 - [C++ compiler](https://code.visualstudio.com/docs/cpp/config-mingw) (for Windows users)
 
