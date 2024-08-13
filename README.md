@@ -48,7 +48,7 @@ When you use this template, follow the checklist to update your info properly
 ### Development
 
 ```bash
-npm run dev:tauri # or pnpm dev:tauri or yarn dev:tauri or bun dev:tauri
+bun run dev:tauri # or pnpm dev:tauri or yarn dev:tauri or bun dev:tauri
 ```
 
 Runs the app in the development mode. 
@@ -60,7 +60,7 @@ When you make edits to the Rust files, they will be rebuilt automatically and yo
 ### Build
 
 ```bash
-npm run build:tauri # or pnpm build:tauri or yarn build:tauri or bun build:tauri
+bun run build:tauri # or pnpm build:tauri or yarn build:tauri or bun build:tauri
 ```
 
 Builds Solid to the `dist` folder and after will embed it into a single binary with your Rust code. 
