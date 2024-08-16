@@ -2,6 +2,7 @@ import { invoke } from '@tauri-apps/api/tauri'
 import { createSignal } from 'solid-js'
 import logo from './assets/logo.svg'
 import './App.css'
+import AddQuestionButton from './components/AddQuestionButton'
 
 function App() {
   const [greetMsg, setGreetMsg] = createSignal('')
@@ -26,6 +27,7 @@ function App() {
         <a href="https://solidjs.com" target="_blank">
           <img src={logo} class="logo solid" alt="Solid logo" />
         </a>
+        <AddQuestionButton />
       </div>
 
       <p>Click on the Tauri, Vite, and Solid logos to learn more.</p>
