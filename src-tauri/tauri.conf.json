@@ -1,8 +1,10 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "devPath": "Injected by vite-plugin-tauri",
-    "distDir": "Injected by vite-plugin-tauri"
+    "beforeBuildCommand": "",
+    "beforeDevCommand": "",
+    "devPath": "../dist",
+    "distDir": "../dist"
   },
   "package": {
     "productName": "MyApp",
