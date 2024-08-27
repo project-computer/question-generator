@@ -1,4 +1,6 @@
 ### Node ###
+# output of pdf
+src-tauri/merged.pdf
 # Logs
 logs
 *.log
