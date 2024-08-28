@@ -1,6 +1,6 @@
 use std::collections::{HashMap, BTreeMap};
-use lopdf::{Document, Object, ObjectId, dictionary, Stream, Bookmark};
-use lopdf::content::{Content, Operation};
+use lopdf::{Document, Object, ObjectId,  Bookmark};
+
 
 pub fn merge_documents(pdf_pages: HashMap<String, Vec<u32>>) -> Result<Document, lopdf::Error> {
     let mut max_id = 1;
@@ -16,11 +16,9 @@ pub fn merge_documents(pdf_pages: HashMap<String, Vec<u32>>) -> Result<Document,
         max_id = doc.max_id + 1;
 
         let pages: BTreeMap<u32, (u32, u16)> = doc.get_pages();
-        for (page_number, (object_id, generation)) in pages.iter() {
-            println!("Page Number: {}, Object ID: {}, Generation: {}", page_number, object_id, generation);
-        }
+      
         for &page_number in &page_numbers {
-            println!("{}", page_number);
+            
             if let Some(&object_id) = pages.get(&page_number) {
                 if first {
                     let bookmark = Bookmark::new(
@@ -148,7 +146,6 @@ pub fn merge_documents(pdf_pages: HashMap<String, Vec<u32>>) -> Result<Document,
 
     // Reorder all new Document objects
     document.renumber_objects();
-    println!("docun{}",document.page_iter().count());
     // Set any Bookmarks to the First child if they are not set to a page
     document.adjust_zero_pages();
 
