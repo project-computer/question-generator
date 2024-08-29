@@ -2,7 +2,7 @@ import { invoke } from '@tauri-apps/api/tauri'
 import { createSignal } from 'solid-js'
 import logo from './assets/logo.svg'
 import './App.css'
-import AddQuestionButton from './components/AddQuestionButton'
+import AddQuestionButton from './pages/QuizGeneratorPage/components/AddQuestionButton'
 
 function App() {
   const [greetMsg, setGreetMsg] = createSignal('')
