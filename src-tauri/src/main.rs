@@ -4,7 +4,7 @@
 )]
 mod services;
 use std::collections::HashMap;
-use services::{pdf};
+use services::pdf;
 use lopdf::Document;
 use lopdf::Error;
 
@@ -18,7 +18,7 @@ fn merge_documents(){
   let mut pdf_pages: HashMap<String, Vec<u32>> = HashMap::new();
   pdf_pages.insert("pdfs/temp1.pdf".to_string(), vec![1, 3, 5]);
   pdf_pages.insert("pdfs/temp2.pdf".to_string(), vec![2, 4]);
-  
+
   let merged_doc: Result<Document, Error>   = pdf::merge_documents(pdf_pages);
   println!("Documents merged successfully!");
   if let Ok(doc) = merged_doc {
